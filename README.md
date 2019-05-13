@@ -1,2 +1,2 @@
 # KPM
-Package Manager for Kubernetes
+A Simple Package Manager for Kubernetes
