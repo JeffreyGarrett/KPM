@@ -1,0 +1,45 @@
+{
+    "NameSpaces": [{
+        "Name": "USAProd",
+        "packages": [
+            {
+                "name": "kpm-node",
+                "version": "1.0.0",
+                "variables":{
+                    "cpu": 4,
+                    "ram": "8gb",
+                    "nodePort": 8080,
+                    "domain": "localhost",
+                    "packageDefinedlabels": ["kpm-node", "team1"]
+                }
+            },
+            {
+                "name": "nginx",
+                "version": "1.0.0",
+                "variables":{
+                    "cpu": 4,
+                    "ram": "8gb",
+                    "nodePort": 32,
+                    "domain": "localhost",
+                    "packageDefinedlabels": ["nginx", "team1"]
+                }
+            }
+        ],
+        "globalPackageLabels": ["USA", "Prod"]
+    },
+    {
+        "Name":"default",
+        "packages":[
+            {
+                "name": "aqua",
+                "version": "3.2.1",
+                "variables":{
+                    "cpu": 2,
+                    "ram": 1,
+                    "daemonSet": true
+                }
+            }
+        ],
+        "globalPackageLabels":["USA", "Prod"]
+    }]
+}
